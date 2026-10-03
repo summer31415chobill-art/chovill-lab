@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>CHOVILL LAB</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main>
+  <header>
+    <div class="brand">CHOVILL LAB</div>
+    <h1>診断 × ガチャ × ランダム生成</h1>
+    <p>モードを選んで、あなただけの設定を生成。</p>
+  </header>
+
+  <section class="panel">
+    <div id="modes" class="modes"></div>
+    <textarea id="input" placeholder="キーワードを入力（任意）"></textarea>
+    <button id="generate">RANDOM GENERATE</button>
+  </section>
+
+  <section id="result" class="panel hidden">
+    <div id="rarity" class="rarity"></div>
+    <div id="visual" class="visual"></div>
+    <h2 id="title"></h2>
+    <p id="desc"></p>
+    <div class="actions">
+      <button id="fav">☆ お気に入り</button>
+      <button id="share">共有</button>
+      <button id="again">再生成</button>
+    </div>
+  </section>
+
+  <section class="panel">
+    <div class="row">
+      <h3>COLLECTION</h3>
+      <button id="clear" class="small">履歴削除</button>
+    </div>
+    <div id="history"></div>
+  </section>
+</main>
+
+<div id="overlay" class="overlay hidden"><div class="orb"></div><strong>ANALYZING...</strong></div>
+<script src="app.js"></script>
+</body>
+</html>
